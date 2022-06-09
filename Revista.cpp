@@ -10,7 +10,7 @@ Revista::Revista()
 Revista::~Revista()
 {}
 
-// Construye una Revisa con Nombre, Numero de Volumen y Numero de Revista
+// Construye una Revista con Nombre, Numero de Volumen y Numero de Revista
 Revista::Revista(std::string nombreR, int numVolR, int numRevistaR) 
 {}
 
