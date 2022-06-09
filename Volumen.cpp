@@ -16,5 +16,5 @@ Volumen::Volumen(std::string nombreV, int numVolV)
 // Muestra el volumen de cualquier Libro o Revista
 void Volumen::print()
 {
-    std::cout << mostrar() << "\n";
+    
 }
