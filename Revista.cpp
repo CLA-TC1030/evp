@@ -17,5 +17,5 @@ Revista::Revista(std::string nombreR, int numVolR, int numRevistaR)
 // Muestra todos los datos de una Revista : Volumen, Nombre de la Revista y Numero de la Revista
 std::string Revista::mostrar()
 {
-    
+    return "";
 }

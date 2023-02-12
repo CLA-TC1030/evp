@@ -17,5 +17,5 @@ Libro::Libro(std::string nombreL, int numVolL, int numLibroL)
 // Muestra todos los datos de un Libro
 std::string Libro::mostrar()
 {
-    
+    return "";
 }
