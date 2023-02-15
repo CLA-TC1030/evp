@@ -1,7 +1,7 @@
 all: clean test
 
 appTests: test/tests.cpp 
-	g++ -fsanitize=address --std=c++17 test/tests.cpp Biblioteca.cpp Revista.cpp Libro.cpp Volumen.cpp -o build/appTests
+	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Biblioteca.cpp Revista.cpp Libro.cpp Volumen.cpp -o build/appTests
 
 test: appTests
 	# executes all tests
@@ -22,5 +22,5 @@ debug:
 debugvs:
 	g++ *.cpp -g -o build/dexercise
 debugtest: 
-	g++ -fsanitize=address --std=c++17 test/tests.cpp Biblioteca.cpp Revista.cpp Libro.cpp Volumen.cpp -g -o build/dexercise
+	g++ -Wall --std=c++17 test/tests.cpp test/catch_amalgamated.cpp Biblioteca.cpp Revista.cpp Libro.cpp Volumen.cpp -g -o build/dexercise
 
