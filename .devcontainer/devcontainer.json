@@ -5,7 +5,8 @@
 				"vadimcn.vscode-lldb",
 				"ms-vscode.cpptools",
 				"analytic-signal.preview-pdf",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"bierner.markdown-mermaid"
 			]
 		}
 	}
