@@ -6,7 +6,7 @@ appTests:
 test: appTests
 	clear && ./build/appTests && cd ..
 clean:
-	find build -mindepth 1 ! -name 'README.txt' -delete && clear
+	find build -mindepth 1 ! -name 'README.txt' -delete
 run:
 	cd build && cmake -DMAIN_EXECUTABLE=ON .. && cmake --build . && clear && ./exercise && cd ..
 debug: 
