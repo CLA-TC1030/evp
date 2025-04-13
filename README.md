@@ -4,6 +4,34 @@
 
 Implementar el siguiente Diagrama de clases UML que representa un **Diseño OO para Gestión de Bibliotecas**.
 
+## Diagrama de Clases
+
+```mermaid
+classDiagram
+      class Biblioteca
+      class Volumen
+      <<abstract>> Volumen
+      class Libro
+      class Revista
+      Biblioteca "1"-->"0..*" Volumen
+      Volumen <|--Libro
+      Volumen <|--Revista
+      Biblioteca: +print() void
+      Biblioteca: +mostrarBiblioteca() string
+      Biblioteca: +incluir(Volumen&) void
+      Biblioteca: +operator+(Volumen&)
+      Volumen: #nombre
+      Volumen: #numVol
+      Volumen: +mostrar()* string
+      Volumen: +print() void
+      Libro: -numLibro
+      Libro: +mostrar() string
+      Revista: -numRevista
+      Revista: +mostrar() string
+```
+
+[Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
+
 ## Ejemplo de Ejecución
 
 ```
@@ -33,34 +61,6 @@ Volumen:2 Revista:Now on OOP in C++ No. Revista:3
 Volumen:1 Libro:OOD in C++ No. Libro:2
 Volumen:4 Revista:Now on OOD in C++ No. Revista:5
 ```
-
-## Diagrama de Clases
-
-```mermaid
-classDiagram
-      class Biblioteca
-      class Volumen
-      <<abstract>> Volumen
-      class Libro
-      class Revista
-      Biblioteca "1"-->"0..*" Volumen
-      Volumen <|--Libro
-      Volumen <|--Revista
-      Biblioteca: +print() void
-      Biblioteca: +mostrarBiblioteca() string
-      Biblioteca: +incluir(Volumen&) void
-      Biblioteca: +operator+(Volumen&)
-      Volumen: #nombre
-      Volumen: #numVol
-      Volumen: +mostrar()* string
-      Volumen: +print() void
-      Libro: -numLibro
-      Libro: +mostrar() string
-      Revista: -numRevista
-      Revista: +mostrar() string
-```
-
-[Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
 ## Prompt para generar el Diagrama de Clases con IA - mermAID
 
