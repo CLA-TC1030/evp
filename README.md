@@ -4,6 +4,12 @@
 
 Implementar el siguiente Diagrama de clases UML que representa un **Diseño OO para Gestión de Bibliotecas**.
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Atlanta_Central_Library_Interior.jpg/960px-Atlanta_Central_Library_Interior.jpg"
+       alt="Interior de la Biblioteca Central de Atlanta"
+       width="300">
+</p>
+
 ## Diagrama de Clases
 
 ```mermaid
